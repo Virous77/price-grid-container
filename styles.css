@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Karla", sans-serif;
+}
+
+footer {
+  margin-top: 1rem;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 4rem;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 300px 300px;
+  grid-template-areas:
+    "top top"
+    "left right";
+}
+
+.item {
+  padding: 2rem;
+}
+
+.upper-box {
+  grid-area: top;
+}
+
+.upper-box h1 {
+  color: hsl(179, 62%, 43%);
+  margin-bottom: 1.3rem;
+}
+
+.main-para {
+  color: hsl(71, 73%, 54%);
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 0.6rem;
+}
+
+.sub-para {
+  font-size: 0.9rem;
+  opacity: 0.6;
+  line-height: 2;
+}
+
+.sub-para2 {
+  font-size: 0.9rem;
+  opacity: 0.6;
+}
+
+.left-box {
+  grid-area: left;
+  background-color: hsl(179, 62%, 43%);
+  color: whitesmoke;
+  border-bottom-left-radius: 5px;
+}
+
+.left-box h3 {
+  font-size: 1rem;
+  line-height: 2;
+  margin-bottom: 0.7rem;
+}
+
+.data {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.3rem;
+}
+
+span {
+  margin-left: 0.5rem;
+  display: block;
+  font-size: 0.9rem;
+  opacity: 0.6;
+}
+
+.left-box p {
+  font-size: 0.9rem;
+}
+
+.button {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+button {
+  padding: 8px 5.8rem;
+  border: none;
+  font-size: 0.8rem;
+  border-radius: 4px;
+  color: whitesmoke;
+  background-color: hsl(71, 73%, 54%);
+  box-shadow: 1px 3px 5px hsl(71, 24%, 31%);
+}
+
+.right-box {
+  grid-area: right;
+  background-color: hsl(179, 48%, 50%);
+  color: whitesmoke;
+  border-bottom-right-radius: 5px;
+}
+
+.right-box h3 {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+li {
+  list-style: none;
+  margin-bottom: 0.1rem;
+  font-size: 0.7rem;
+  opacity: 0.9;
+  font-weight: normal;
+}
+
+@media (max-width: 580px) {
+  section {
+    display: unset;
+    max-height: fit-content;
+  }
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    /* grid-template-rows: 1fr; */
+    grid-template-areas: "top" "left" "right";
+  }
+
+  .button {
+    text-align: start;
+  }
+}
